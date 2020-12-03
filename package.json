@@ -1,6 +1,9 @@
 {
   "name": "tea-era",
   "version": "0.1.0",
+  "description": "This website is for the cafe, Tea Era.",
+  "author": "Jason-Kyle De Lara",
+  "license": "MIT",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
