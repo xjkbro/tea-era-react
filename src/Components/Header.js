@@ -1,26 +1,71 @@
-import React from "react";
-import {Jumbotron, Container, Row, Col} from 'reactstrap';
+import React, { useState } from "react";
+import {
+    Container,
+    Row,
+    Col,
+    Navbar,
+    NavbarBrand,
+    Nav,
+    NavbarToggler,
+    Collapse,
+    NavItem,
+    Jumbotron,
+    Button,
+} from "reactstrap";
+import { NavLink } from "react-router-dom";
+
+import Logo from "../tea logo.png";
 
 function Header() {
+    const [isNavOpen, setIsOpen] = useState(false);
+    const toggleNav = () => setIsOpen(!isNavOpen);
     return (
-    <Jumbotron fluid className="fixed-top">
+        // <Jumbotron fluid className="fixed-top">
         <Container className="mx-auto">
-            <Row>
-                <Col xs="4" className="align-self-center">
-                    <>TEA ERA </>
-                </Col>
-                <Col xs="2" className="align-self-center">
-    <i className="d-none d-md-block">home</i>
-                </Col>
-                <Col xs="2" className="align-self-center">
-                <i className="d-none d-md-block">home</i>
-                </Col>
-                <Col xs="2" className="align-self-center">
-                <i className="d-none d-md-block">home</i>
-                </Col>
-            </Row>
+            <Navbar sticky="top" expand="md">
+                <div className="container">
+                    <NavbarBrand className="mr-auto" href="/home">
+                        <img
+                            src="/tea logo.png"
+                            className="logo"
+                            alt="Tea Era Logo"
+                        />
+                    </NavbarBrand>
+                    <NavbarToggler onClick={toggleNav} />
+                    <Collapse isOpen={isNavOpen} navbar>
+                        <Nav navbar>
+                            <NavItem className="navItems">
+                                <NavLink className="nav-link" to="/menu">
+                                    Menu
+                                </NavLink>
+                            </NavItem>
+                            <NavItem className="navItems">
+                                <NavLink className="nav-link" to="/Tea">
+                                    Tea
+                                </NavLink>
+                            </NavItem>
+                            <NavItem className="navItems">
+                                <NavLink className="nav-link" to="/attractions">
+                                    Attactions
+                                </NavLink>
+                            </NavItem>
+                            <NavItem className="navItems">
+                                <NavLink className="nav-link" to="/location">
+                                    Location
+                                </NavLink>
+                            </NavItem>
+                            <NavItem>
+                                <NavLink className="nav-link" to="/contact">
+                                    Contact
+                                </NavLink>
+                            </NavItem>
+                        </Nav>
+                    </Collapse>
+                </div>
+            </Navbar>
         </Container>
-    </Jumbotron>);
+        // </Jumbotron>
+    );
 }
 
 export default Header;

@@ -1,38 +1,155 @@
 .App {
-  text-align: center;
+    text-align: center;
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+    height: 40vmin;
+    pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
 }
 
 .App-link {
-  color: #61dafb;
+    color: #61dafb;
 }
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+body {
+    background-color: white;
+    font-family: "Montserrat", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Poiret One";
+    color: #7a6a53;
+}
+
+.logo {
+    height: 40px;
+    vertical-align: unset;
+    margin-left: 10px;
+}
+
+a:hover {
+    color: grey;
+}
+
+a {
+    color: #7a6a53;
+}
+
+header h2 {
+    color: white;
+}
+
+header div div div a {
+    color: #7a6a53;
+    font-weight: bold;
+}
+
+header div div div a:hover {
+    color: grey;
+}
+
+.site-footer {
+    background-image: linear-gradient(white, white);
+    padding: 20px 0;
+}
+
+.jumbotron {
+    padding: 20px;
+    background-color: white;
+    color: white;
+    margin: 0;
+}
+
+.row-content {
+    padding: 50px 0;
+    border-bottom: 1px ridge;
+    min-height: 200px;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#carouselButton {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+}
+
+.img-thumb {
+    padding: 0.25rem;
+    border-radius: 0.25rem;
+    max-width: 100%;
+    height: auto;
+}
+
+.gallery-img {
+    height: 400px;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: auto;
+    opacity: 0;
+    transition: 0.5s ease;
+    background-color: rgba(63, 63, 63, 0.425);
+}
+
+.overlay:hover {
+    opacity: 1;
+}
+
+.pt-100 {
+    padding-top: 100px;
+}
+
+#mainheader {
+    background-color: #948c75;
+}
+
+.nav-link {
+    color: black;
+}
+
+.navItems {
+    padding: 0 69px 0 69px;
+}
+
+.carousel-item > img {
+    width: 100%;
 }
