@@ -22,7 +22,7 @@ function Header() {
     return (
         // <Jumbotron fluid className="fixed-top">
         <Container className="mx-auto">
-            <Navbar sticky="top" expand="md">
+            <Navbar className="bg-white" light sticky="top" expand="md">
                 <div className="container">
                     <NavbarBrand className="mr-auto" href="/home">
                         <img
@@ -35,27 +35,42 @@ function Header() {
                     <Collapse isOpen={isNavOpen} navbar>
                         <Nav navbar>
                             <NavItem className="navItems">
-                                <NavLink className="nav-link" to="/menu">
+                                <NavLink
+                                    className="nav-link header-link"
+                                    to="/menu"
+                                >
                                     Menu
                                 </NavLink>
                             </NavItem>
                             <NavItem className="navItems">
-                                <NavLink className="nav-link" to="/Tea">
+                                <NavLink
+                                    className="nav-link header-link"
+                                    to="/Tea"
+                                >
                                     Tea
                                 </NavLink>
                             </NavItem>
                             <NavItem className="navItems">
-                                <NavLink className="nav-link" to="/attractions">
+                                <NavLink
+                                    className="nav-link header-link"
+                                    to="/attractions"
+                                >
                                     Attactions
                                 </NavLink>
                             </NavItem>
                             <NavItem className="navItems">
-                                <NavLink className="nav-link" to="/location">
+                                <NavLink
+                                    className="nav-link header-link"
+                                    to="/location"
+                                >
                                     Location
                                 </NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink className="nav-link" to="/contact">
+                                <NavLink
+                                    className="nav-link header-link"
+                                    to="/contact"
+                                >
                                     Contact
                                 </NavLink>
                             </NavItem>

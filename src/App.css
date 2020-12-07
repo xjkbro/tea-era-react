@@ -67,7 +67,7 @@ header h2 {
     color: white;
 }
 
-header div div div a {
+.header-link {
     color: #7a6a53;
     font-weight: bold;
 }
@@ -152,4 +152,8 @@ header div div div a:hover {
 
 .carousel-item > img {
     width: 100%;
+}
+
+.bg-white {
+    background-color: white;
 }
