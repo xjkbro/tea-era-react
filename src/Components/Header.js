@@ -26,7 +26,7 @@ function Header() {
                 <div className="container">
                     <NavbarBrand className="mr-auto" href="/home">
                         <img
-                            src="/tea logo.png"
+                            src="images/tea logo.png"
                             className="logo"
                             alt="Tea Era Logo"
                         />
