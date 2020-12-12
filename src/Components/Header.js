@@ -25,13 +25,13 @@ function Header() {
         <Container className="mx-auto">
             <Navbar className="bg-white" light sticky="top" expand="md">
                 <div className="container">
-                    <NavbarBrand className="mr-auto" href="/home">
+                    <NavLink className="mr-auto my-3" to="/home">
                         <img
                             src="images/tea logo.png"
                             className="logo"
                             alt="Tea Era Logo"
                         />
-                    </NavbarBrand>
+                    </NavLink>
                     <NavbarToggler onClick={toggleNav} />
                     <Stagger in>
                         <Collapse isOpen={isNavOpen} navbar>
