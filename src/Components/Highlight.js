@@ -61,7 +61,7 @@ const Highlight = (props) => {
                     exitTransform: "translateY(100px)",
                 }}
                 fadeProps={{
-                    enterOpacity: 0.85,
+                    enterOpacity: 0.75,
                 }}
             >
                 <Carousel
