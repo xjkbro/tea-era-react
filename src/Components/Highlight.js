@@ -8,6 +8,7 @@ import {
     CarouselCaption,
 } from "reactstrap";
 import { items } from "../shared/items";
+import { FadeTransform } from "react-animation-components";
 
 const Highlight = (props) => {
     const [activeIndex, setActiveIndex] = useState(0);
@@ -54,29 +55,39 @@ const Highlight = (props) => {
 
     return (
         <Container>
-            <Carousel
-                className="carouselStyle"
-                activeIndex={activeIndex}
-                next={next}
-                previous={previous}
+            <FadeTransform
+                in
+                transformProps={{
+                    exitTransform: "translateY(100px)",
+                }}
+                fadeProps={{
+                    enterOpacity: 0.85,
+                }}
             >
-                <CarouselIndicators
-                    items={items}
+                <Carousel
+                    className="carouselStyle"
                     activeIndex={activeIndex}
-                    onClickHandler={goToIndex}
-                />
-                {slides}
-                <CarouselControl
-                    direction="prev"
-                    directionText="Previous"
-                    onClickHandler={previous}
-                />
-                <CarouselControl
-                    direction="next"
-                    directionText="Next"
-                    onClickHandler={next}
-                />
-            </Carousel>
+                    next={next}
+                    previous={previous}
+                >
+                    <CarouselIndicators
+                        items={items}
+                        activeIndex={activeIndex}
+                        onClickHandler={goToIndex}
+                    />
+                    {slides}
+                    <CarouselControl
+                        direction="prev"
+                        directionText="Previous"
+                        onClickHandler={previous}
+                    />
+                    <CarouselControl
+                        direction="next"
+                        directionText="Next"
+                        onClickHandler={next}
+                    />
+                </Carousel>
+            </FadeTransform>
         </Container>
     );
 };
