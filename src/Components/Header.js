@@ -1,21 +1,14 @@
 import React, { useState } from "react";
 import {
     Container,
-    Row,
-    Col,
     Navbar,
-    NavbarBrand,
     Nav,
     NavbarToggler,
     Collapse,
     NavItem,
-    Jumbotron,
-    Button,
 } from "reactstrap";
 import { NavLink } from "react-router-dom";
 import { Fade, Stagger } from "react-animation-components";
-
-import Logo from "../tea logo.png";
 
 function Header() {
     const [isNavOpen, setIsOpen] = useState(false);

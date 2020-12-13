@@ -1,5 +1,6 @@
 export const imgText = [
     {
+        id: 0,
         title: "The Tea",
         src: "/images/tea.jpeg",
         desc:

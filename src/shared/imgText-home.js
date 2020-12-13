@@ -1,11 +1,13 @@
 export const imgText = [
     {
-        title: "Mission Statement",
+        id: 0,
+        title: "Our Mission Statement",
         src: "/images/carousel-1.jpg",
         desc:
             "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quas nulla atque soluta eum cum, accusantium, hic quaerat, odio quibusdam nemo? Animi facere consequuntu nesciunt et saepe ipsam optio! Laborum nihil tenetur obcaecati incidunt, blanditiis error facere! Placeat molestias nostrum obcaecati! Sed, vitae alias ipsum ea exercitationem nesciunt rem voluptatum soluta delectus iusto praesentium sequi incidunt eveniet odit tenetur quae hic qui autem est reiciendis at, ut, et ab officia!",
     },
     {
+        id: 1,
         title: "Our Commitment & Responsibility",
         src: "/images/commitment-responsibility.jpg",
         desc:
