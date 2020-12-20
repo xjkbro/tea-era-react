@@ -1,6 +1,7 @@
 import React from "react";
 import { menuItems } from "../shared/menuItems";
 import { Row, Col } from "reactstrap";
+import { Fade } from "react-animation-components";
 
 function Menu() {
     //   let content = [];
@@ -37,7 +38,9 @@ function Menu() {
 
     return (
         <div className="container">
-            <Row className="py-4">{content}</Row>
+            <Fade in>
+                <Row className="py-4">{content}</Row>
+            </Fade>
         </div>
     );
 }
